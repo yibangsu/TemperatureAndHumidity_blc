@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">th</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_default">Serial Initial...</string>
+    <string name="title_init_error">Serial Not Open</string>
+    <string name="title_serial">Serial</string>
+    <string name="temperature_title_1">temperature 1:</string>
+    <string name="temperature_title_2">temperature 2:</string>
+    <string name="temperature_title_3">temperature 3:</string>
+    <string name="temperature_title_4">temperature 4:</string>
+
+    <string name="humidity_title_1">humidity 1:</string>
+    <string name="humidity_title_2">humidity 2:</string>
+    <string name="humidity_title_3">humidity 3:</string>
+    <string name="humidity_title_4">humidity 4:</string>
+
+    <string name="Initial">Initial...</string>
+
+    <string name="error">error!</string>
+</resources>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <TextView
+        android:id="@+id/temperature_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperature_title_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_title_1" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="469dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="469dp"
+        android:text="@string/title_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment" />
+
+    <TextView
+        android:id="@+id/temperature_value_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/temperature_title_2"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value_1" />
+
+    <TextView
+        android:id="@+id/humidity_value_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/humidity_title_2"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value_1" />
+
+    <TextView
+        android:id="@+id/temperature_value_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/temperature_title_3"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value_2" />
+
+    <TextView
+        android:id="@+id/temperature_title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperature_title_4"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_title_3" />
+
+    <TextView
+        android:id="@+id/humidity_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/humidity_title_2"
+        app:layout_constraintStart_toEndOf="@+id/temperature_value_2"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_title_1" />
+
+    <TextView
+        android:id="@+id/humidity_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/humidity_title_1"
+        app:layout_constraintStart_toEndOf="@+id/temperature_value_1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/temperature_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperature_title_3"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_title_2" />
+
+    <TextView
+        android:id="@+id/humidity_value_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/humidity_title_1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/humidity_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/humidity_title_3"
+        app:layout_constraintStart_toEndOf="@+id/temperature_value_3"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_title_2" />
+
+    <TextView
+        android:id="@+id/temperature_value_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/temperature_title_1"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/temperature_value_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/temperature_title_4"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value_3" />
+
+    <TextView
+        android:id="@+id/humidity_value_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/humidity_title_3"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value_2" />
+
+    <TextView
+        android:id="@+id/temperature_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/temperature_title_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/humidity_title_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/humidity_title_4"
+        app:layout_constraintStart_toEndOf="@+id/temperature_value_4"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_title_3" />
+
+    <TextView
+        android:id="@+id/humidity_value_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Initial"
+        app:layout_constraintStart_toEndOf="@+id/humidity_title_4"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value_3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:text="Button"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_value_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
